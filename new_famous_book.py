@@ -5,7 +5,7 @@ import requests
 from bs4 import BeautifulSoup
 
 def getnewbook():
-    url='https://www.books.com.tw/web/sys_newtopb/books/02/?loc=P_0002_003'
+    url='https://www.books.com.tw/web/sys_saletopb/books/02/?loc=P_0002_003'
     html=requests.get(url)
     html.encoding='utf-8'
     headers={'user-agent':'Mozilla/5.0'}
